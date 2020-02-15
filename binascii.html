@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: built-in module binascii</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>binascii</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>Conversion&nbsp;between&nbsp;binary&nbsp;data&nbsp;and&nbsp;ASCII</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#Exception">builtins.Exception</a>(<a href="builtins.html#BaseException">builtins.BaseException</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="binascii.html#Incomplete">Incomplete</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="builtins.html#ValueError">builtins.ValueError</a>(<a href="builtins.html#Exception">builtins.Exception</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="binascii.html#Error">Error</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Error">class <strong>Error</strong></a>(<a href="builtins.html#ValueError">builtins.ValueError</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Inappropriate&nbsp;argument&nbsp;value&nbsp;(of&nbsp;correct&nbsp;type).<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="binascii.html#Error">Error</a></dd>
+<dd><a href="builtins.html#ValueError">builtins.ValueError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#ValueError">builtins.ValueError</a>:<br>
+<dl><dt><a name="Error-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#ValueError">builtins.ValueError</a>:<br>
+<dl><dt><a name="Error-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="Error-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="Error-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="Error-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="Error-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Error-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="Error-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Error-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Error-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt><a href="builtins.html#Exception">Exception</a>.<a href="#Error-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Incomplete">class <strong>Incomplete</strong></a>(<a href="builtins.html#Exception">builtins.Exception</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Common&nbsp;base&nbsp;class&nbsp;for&nbsp;all&nbsp;non-exit&nbsp;exceptions.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="binascii.html#Incomplete">Incomplete</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="Incomplete-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="Incomplete-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="Incomplete-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="Incomplete-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="Incomplete-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="Incomplete-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Incomplete-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="Incomplete-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Incomplete-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Incomplete-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt><a href="builtins.html#Exception">Exception</a>.<a href="#Incomplete-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-a2b_base64"><strong>a2b_base64</strong></a>(data, /)</dt><dd><tt>Decode&nbsp;a&nbsp;line&nbsp;of&nbsp;base64&nbsp;data.</tt></dd></dl>
+ <dl><dt><a name="-a2b_hex"><strong>a2b_hex</strong></a>(hexstr, /)</dt><dd><tt>Binary&nbsp;data&nbsp;of&nbsp;hexadecimal&nbsp;representation.<br>
+&nbsp;<br>
+hexstr&nbsp;must&nbsp;contain&nbsp;an&nbsp;even&nbsp;number&nbsp;of&nbsp;hex&nbsp;digits&nbsp;(upper&nbsp;or&nbsp;lower&nbsp;case).<br>
+This&nbsp;function&nbsp;is&nbsp;also&nbsp;available&nbsp;as&nbsp;"<a href="#-unhexlify">unhexlify</a>()".</tt></dd></dl>
+ <dl><dt><a name="-a2b_hqx"><strong>a2b_hqx</strong></a>(data, /)</dt><dd><tt>Decode&nbsp;.hqx&nbsp;coding.</tt></dd></dl>
+ <dl><dt><a name="-a2b_qp"><strong>a2b_qp</strong></a>(data, header=False)</dt><dd><tt>Decode&nbsp;a&nbsp;string&nbsp;of&nbsp;qp-encoded&nbsp;data.</tt></dd></dl>
+ <dl><dt><a name="-a2b_uu"><strong>a2b_uu</strong></a>(data, /)</dt><dd><tt>Decode&nbsp;a&nbsp;line&nbsp;of&nbsp;uuencoded&nbsp;data.</tt></dd></dl>
+ <dl><dt><a name="-b2a_base64"><strong>b2a_base64</strong></a>(data, /, *, newline=True)</dt><dd><tt>Base64-code&nbsp;line&nbsp;of&nbsp;data.</tt></dd></dl>
+ <dl><dt><a name="-b2a_hex"><strong>b2a_hex</strong></a>(...)</dt><dd><tt>Hexadecimal&nbsp;representation&nbsp;of&nbsp;binary&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;&nbsp;sep<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;optional&nbsp;single&nbsp;character&nbsp;or&nbsp;byte&nbsp;to&nbsp;separate&nbsp;hex&nbsp;bytes.<br>
+&nbsp;&nbsp;bytes_per_sep<br>
+&nbsp;&nbsp;&nbsp;&nbsp;How&nbsp;many&nbsp;bytes&nbsp;between&nbsp;separators.&nbsp;&nbsp;Positive&nbsp;values&nbsp;count&nbsp;from&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;right,&nbsp;negative&nbsp;values&nbsp;count&nbsp;from&nbsp;the&nbsp;left.<br>
+&nbsp;<br>
+The&nbsp;return&nbsp;value&nbsp;is&nbsp;a&nbsp;bytes&nbsp;object.&nbsp;&nbsp;This&nbsp;function&nbsp;is&nbsp;also<br>
+available&nbsp;as&nbsp;"<a href="#-hexlify">hexlify</a>()".<br>
+&nbsp;<br>
+Example:<br>
+&gt;&gt;&gt;&nbsp;binascii.<a href="#-b2a_hex">b2a_hex</a>(b'\xb9\x01\xef')<br>
+b'b901ef'<br>
+&gt;&gt;&gt;&nbsp;binascii.<a href="#-hexlify">hexlify</a>(b'\xb9\x01\xef',&nbsp;':')<br>
+b'b9:01:ef'<br>
+&gt;&gt;&gt;&nbsp;binascii.<a href="#-b2a_hex">b2a_hex</a>(b'\xb9\x01\xef',&nbsp;b'_',&nbsp;2)<br>
+b'b9_01ef'</tt></dd></dl>
+ <dl><dt><a name="-b2a_hqx"><strong>b2a_hqx</strong></a>(data, /)</dt><dd><tt>Encode&nbsp;.hqx&nbsp;data.</tt></dd></dl>
+ <dl><dt><a name="-b2a_qp"><strong>b2a_qp</strong></a>(data, quotetabs=False, istext=True, header=False)</dt><dd><tt>Encode&nbsp;a&nbsp;string&nbsp;using&nbsp;quoted-printable&nbsp;encoding.<br>
+&nbsp;<br>
+On&nbsp;encoding,&nbsp;when&nbsp;istext&nbsp;is&nbsp;set,&nbsp;newlines&nbsp;are&nbsp;not&nbsp;encoded,&nbsp;and&nbsp;white<br>
+space&nbsp;at&nbsp;end&nbsp;of&nbsp;lines&nbsp;is.&nbsp;&nbsp;When&nbsp;istext&nbsp;is&nbsp;not&nbsp;set,&nbsp;\r&nbsp;and&nbsp;\n&nbsp;(CR/LF)<br>
+are&nbsp;both&nbsp;encoded.&nbsp;&nbsp;When&nbsp;quotetabs&nbsp;is&nbsp;set,&nbsp;space&nbsp;and&nbsp;tabs&nbsp;are&nbsp;encoded.</tt></dd></dl>
+ <dl><dt><a name="-b2a_uu"><strong>b2a_uu</strong></a>(data, /, *, backtick=False)</dt><dd><tt>Uuencode&nbsp;line&nbsp;of&nbsp;data.</tt></dd></dl>
+ <dl><dt><a name="-crc32"><strong>crc32</strong></a>(data, crc=0, /)</dt><dd><tt>Compute&nbsp;CRC-32&nbsp;incrementally.</tt></dd></dl>
+ <dl><dt><a name="-crc_hqx"><strong>crc_hqx</strong></a>(data, crc, /)</dt><dd><tt>Compute&nbsp;CRC-CCITT&nbsp;incrementally.</tt></dd></dl>
+ <dl><dt><a name="-hexlify"><strong>hexlify</strong></a>(...)</dt><dd><tt>Hexadecimal&nbsp;representation&nbsp;of&nbsp;binary&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;&nbsp;sep<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;optional&nbsp;single&nbsp;character&nbsp;or&nbsp;byte&nbsp;to&nbsp;separate&nbsp;hex&nbsp;bytes.<br>
+&nbsp;&nbsp;bytes_per_sep<br>
+&nbsp;&nbsp;&nbsp;&nbsp;How&nbsp;many&nbsp;bytes&nbsp;between&nbsp;separators.&nbsp;&nbsp;Positive&nbsp;values&nbsp;count&nbsp;from&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;right,&nbsp;negative&nbsp;values&nbsp;count&nbsp;from&nbsp;the&nbsp;left.<br>
+&nbsp;<br>
+The&nbsp;return&nbsp;value&nbsp;is&nbsp;a&nbsp;bytes&nbsp;object.&nbsp;&nbsp;This&nbsp;function&nbsp;is&nbsp;also<br>
+available&nbsp;as&nbsp;"<a href="#-b2a_hex">b2a_hex</a>()".</tt></dd></dl>
+ <dl><dt><a name="-rlecode_hqx"><strong>rlecode_hqx</strong></a>(data, /)</dt><dd><tt>Binhex&nbsp;RLE-code&nbsp;binary&nbsp;data.</tt></dd></dl>
+ <dl><dt><a name="-rledecode_hqx"><strong>rledecode_hqx</strong></a>(data, /)</dt><dd><tt>Decode&nbsp;hexbin&nbsp;RLE-coded&nbsp;string.</tt></dd></dl>
+ <dl><dt><a name="-unhexlify"><strong>unhexlify</strong></a>(hexstr, /)</dt><dd><tt>Binary&nbsp;data&nbsp;of&nbsp;hexadecimal&nbsp;representation.<br>
+&nbsp;<br>
+hexstr&nbsp;must&nbsp;contain&nbsp;an&nbsp;even&nbsp;number&nbsp;of&nbsp;hex&nbsp;digits&nbsp;(upper&nbsp;or&nbsp;lower&nbsp;case).</tt></dd></dl>
+</td></tr></table>
+</body></html>

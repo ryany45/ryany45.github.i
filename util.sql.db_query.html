@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module util.sql.db_query</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="util.html"><font color="#ffffff">util</font></a>.<a href="util.sql.html"><font color="#ffffff">sql</font></a>.db_query</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cbrian%5Cdesktop%5Citri_dev%5Cutil%5Csql%5Cdb_query.py">c:\users\brian\desktop\itri_dev\util\sql\db_query.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-getControlRecord"><strong>getControlRecord</strong></a>()</dt><dd><tt>utility:&nbsp;the&nbsp;api&nbsp;will&nbsp;get&nbsp;all&nbsp;of&nbsp;the&nbsp;ctbl&nbsp;record&nbsp;in&nbsp;db<br>
+@input:&nbsp;None<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;list&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getControlRecordByPronum"><strong>getControlRecordByPronum</strong></a>(project_number)</dt><dd><tt>utility:&nbsp;the&nbsp;api&nbsp;will&nbsp;get&nbsp;the&nbsp;ctbl&nbsp;record&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number<br>
+@input:&nbsp;type&nbsp;&lt;String&gt;<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;list&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getDBRecordByProNum"><strong>getDBRecordByProNum</strong></a>(project_number)</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;the&nbsp;record&nbsp;data&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number&nbsp;&nbsp;<br>
+@input:&nbsp;Project&nbsp;Number(type&nbsp;&lt;String&gt;)<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;list&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getNewTelRecordByProNum"><strong>getNewTelRecordByProNum</strong></a>(project_number)</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;the&nbsp;newest&nbsp;tel&nbsp;record&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number&nbsp;&nbsp;<br>
+@input:&nbsp;Project&nbsp;Number(type&nbsp;&lt;String&gt;)<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;list&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getProNum"><strong>getProNum</strong></a>()</dt><dd><tt>utility:&nbsp;the&nbsp;api&nbsp;will&nbsp;get&nbsp;all&nbsp;of&nbsp;the&nbsp;project&nbsp;number&nbsp;in&nbsp;record&nbsp;data<br>
+@input:&nbsp;None<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;String&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getRawControlRecord"><strong>getRawControlRecord</strong></a>()</dt><dd><tt>utility:&nbsp;the&nbsp;api&nbsp;will&nbsp;get&nbsp;all&nbsp;of&nbsp;the&nbsp;ctbl&nbsp;record&nbsp;in&nbsp;db<br>
+@input:&nbsp;None<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;Ctbl&nbsp;Record&nbsp;Object&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getRawControlRecordByPronum"><strong>getRawControlRecordByPronum</strong></a>(project_number)</dt><dd><tt>utility:&nbsp;the&nbsp;api&nbsp;will&nbsp;get&nbsp;the&nbsp;ctbl&nbsp;record&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number<br>
+@input:&nbsp;type&nbsp;&lt;String&gt;<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;Ctbl&nbsp;Record&nbsp;Object&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getRawDBRecordByProNum"><strong>getRawDBRecordByProNum</strong></a>(project_number)</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;the&nbsp;record&nbsp;data&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number&nbsp;&nbsp;<br>
+@input:&nbsp;Project&nbsp;Number(type&nbsp;&lt;String&gt;)<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;Record&nbsp;Data&nbsp;Object&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getRawTelRecordByProDate"><strong>getRawTelRecordByProDate</strong></a>(project_number, date)</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;the&nbsp;tel&nbsp;record&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number&nbsp;and&nbsp;datetime<br>
+@input:&nbsp;Project&nbsp;Number(type&nbsp;&lt;String&gt;),&nbsp;date(type&nbsp;&lt;String&gt;)<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&lt;Tel&nbsp;record&nbsp;Object&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getRecordByProNum"><strong>getRecordByProNum</strong></a>(project_number)</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;the&nbsp;record&nbsp;data&nbsp;and&nbsp;newest&nbsp;tel.&nbsp;record&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number&nbsp;&nbsp;<br>
+@input:&nbsp;Project&nbsp;Number(type&nbsp;&lt;String&gt;)<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;Record&nbsp;Data&nbsp;Object&gt;],&nbsp;type&nbsp;&lt;list&gt;[type&nbsp;&lt;Tel&nbsp;Record&nbsp;Object&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getTelRecordByProDate"><strong>getTelRecordByProDate</strong></a>(project_number, date)</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;the&nbsp;tel&nbsp;record&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number&nbsp;and&nbsp;datetime<br>
+@input:&nbsp;Project&nbsp;Number(type&nbsp;&lt;String&gt;),&nbsp;date(type&nbsp;&lt;String&gt;)<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;)</tt></dd></dl>
+ <dl><dt><a name="-getTelRecordsByProNum"><strong>getTelRecordsByProNum</strong></a>(project_number)</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;all&nbsp;of&nbsp;tel&nbsp;record&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number&nbsp;&nbsp;<br>
+@input:&nbsp;Project&nbsp;Number(type&nbsp;&lt;String&gt;)<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;list&gt;])</tt></dd></dl>
+ <dl><dt><a name="-getTelRecordsDateByProNum"><strong>getTelRecordsDateByProNum</strong></a>(project_number)</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;all&nbsp;of&nbsp;tel&nbsp;record.datetime&nbsp;in&nbsp;db&nbsp;by&nbsp;project&nbsp;number&nbsp;&nbsp;<br>
+@input:&nbsp;Project&nbsp;Number(type&nbsp;&lt;String&gt;)<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;)</tt></dd></dl>
+ <dl><dt><a name="-query_RawTelRecord"><strong>query_RawTelRecord</strong></a>()</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;all&nbsp;of&nbsp;the&nbsp;tel.&nbsp;record&nbsp;in&nbsp;db&nbsp;&nbsp;<br>
+@input:&nbsp;None<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;Tel&nbsp;Record&nbsp;Object&gt;])</tt></dd></dl>
+ <dl><dt><a name="-query_Rawdata"><strong>query_Rawdata</strong></a>()</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;all&nbsp;of&nbsp;the&nbsp;record_data&nbsp;and&nbsp;tel.&nbsp;reocrd&nbsp;in&nbsp;db&nbsp;&nbsp;<br>
+@input:&nbsp;None<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;Record&nbsp;Data&nbsp;Object&gt;],&nbsp;type&nbsp;&lt;list&gt;[type&nbsp;&lt;Tel&nbsp;Record&nbsp;Object&gt;])</tt></dd></dl>
+ <dl><dt><a name="-query_RawdbRecord"><strong>query_RawdbRecord</strong></a>()</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;all&nbsp;of&nbsp;the&nbsp;record_data&nbsp;in&nbsp;db&nbsp;&nbsp;<br>
+@input:&nbsp;None<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;Record&nbsp;Data&nbsp;Object&gt;])</tt></dd></dl>
+ <dl><dt><a name="-query_data"><strong>query_data</strong></a>()</dt><dd><tt>utility:the&nbsp;api&nbsp;will&nbsp;get&nbsp;all&nbsp;of&nbsp;the&nbsp;record_data&nbsp;and&nbsp;tel.&nbsp;reocrd&nbsp;in&nbsp;db&nbsp;&nbsp;<br>
+@input:&nbsp;None<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&nbsp;&lt;list&gt;],&nbsp;type&nbsp;&lt;list&gt;[type&nbsp;&lt;list&gt;])</tt></dd></dl>
+ <dl><dt><a name="-query_data_with_condition"><strong>query_data_with_condition</strong></a>(cond)</dt><dd><tt>utility:&nbsp;the&nbsp;api&nbsp;will&nbsp;get&nbsp;the&nbsp;record&nbsp;data&nbsp;in&nbsp;db&nbsp;by&nbsp;condition&nbsp;map&nbsp;<br>
+@input:&nbsp;cond(type&nbsp;&lt;Dictionary&gt;)<br>
+@return:&nbsp;(type&nbsp;&lt;list&gt;[type&lt;list&gt;])</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>db</strong> = &lt;SQLAlchemy engine=None&gt;</td></tr></table>
+</body></html>

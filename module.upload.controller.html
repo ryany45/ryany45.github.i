@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module module.upload.controller</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="module.html"><font color="#ffffff">module</font></a>.<a href="module.upload.html"><font color="#ffffff">upload</font></a>.controller</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cbrian_yang%5Cdesktop%5Citri_dev%5Cmodule%5Cupload%5Ccontroller.py">c:\users\brian_yang\desktop\itri_dev\module\upload\controller.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+<a href="util.sql.db_insert.html">util.sql.db_insert</a><br>
+<a href="util.sql.db_misc.html">util.sql.db_misc</a><br>
+</td><td width="25%" valign=top><a href="util.sql.db_query.html">util.sql.db_query</a><br>
+<a href="util.sql.db_struct.html">util.sql.db_struct</a><br>
+<a href="util.fileparser.html">util.fileparser</a><br>
+</td><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="threading.html">threading</a><br>
+<a href="util.xls.timeConvert.html">util.xls.timeConvert</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-F_sendData"><strong>F_sendData</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/upload/data<br>
+utility:&nbsp;get&nbsp;the&nbsp;file&nbsp;stream&nbsp;inside&nbsp;the&nbsp;request,&nbsp;and&nbsp;parse&nbsp;it&nbsp;to&nbsp;render&nbsp;the&nbsp;file&nbsp;list&nbsp;page<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"upload/filelist.html",&nbsp;with&nbsp;jinja&nbsp;argument&nbsp;data_list&nbsp;and&nbsp;re_num</tt></dd></dl>
+ <dl><dt><a name="-F_sendNewCaseDetail"><strong>F_sendNewCaseDetail</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/upload/host<br>
+utility:&nbsp;render&nbsp;the&nbsp;detail&nbsp;of&nbsp;each&nbsp;case&nbsp;for&nbsp;user&nbsp;confirmation<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"upload/case_detail.html",&nbsp;with&nbsp;a&nbsp;data_head&nbsp;list&nbsp;and&nbsp;data_list&nbsp;list</tt></dd></dl>
+ <dl><dt><a name="-F_sendtoDb"><strong>F_sendtoDb</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/upload/store<br>
+utility:&nbsp;save&nbsp;the&nbsp;whole&nbsp;file&nbsp;record&nbsp;to&nbsp;Mysql&nbsp;Server&nbsp;with&nbsp;util/db_insert.insert_data()&nbsp;module<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"upload/redirect.html"&nbsp;for&nbsp;result&nbsp;confirm&nbsp;and&nbsp;local&nbsp;hard&nbsp;refresh</tt></dd></dl>
+ <dl><dt><a name="-index"><strong>index</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/upload<br>
+utility:&nbsp;render&nbsp;the&nbsp;default&nbsp;upload&nbsp;page<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"upload/home.html",&nbsp;a&nbsp;default&nbsp;upload&nbsp;home&nbsp;page</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>header</strong> = []<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>tel_data</strong> = []<br>
+<strong>updated_data</strong> = []<br>
+<strong>upload_api</strong> = &lt;flask.blueprints.Blueprint object&gt;</td></tr></table>
+</body></html>

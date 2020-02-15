@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module module.search.controller</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="module.html"><font color="#ffffff">module</font></a>.<a href="module.search.html"><font color="#ffffff">search</font></a>.controller</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cbrian_yang%5Cdesktop%5Citri_dev%5Cmodule%5Csearch%5Ccontroller.py">c:\users\brian_yang\desktop\itri_dev\module\search\controller.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="util.sql.db_query.html">util.sql.db_query</a><br>
+<a href="util.xls.filewriter.html">util.xls.filewriter</a><br>
+</td><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="util.xls.timeConvert.html">util.xls.timeConvert</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-S_DownControlfile"><strong>S_DownControlfile</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/search/DowbFile2<br>
+utility:&nbsp;This&nbsp;is&nbsp;a&nbsp;non&nbsp;rendering&nbsp;module,&nbsp;input&nbsp;the&nbsp;case&nbsp;detail&nbsp;and&nbsp;generate&nbsp;a&nbsp;"control&nbsp;form"&nbsp;file<br>
+&nbsp;<br>
+@Return&nbsp;File&nbsp;Object</tt></dd></dl>
+ <dl><dt><a name="-S_DownListfile"><strong>S_DownListfile</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/search/DowbFile1<br>
+utility:&nbsp;This&nbsp;is&nbsp;a&nbsp;non&nbsp;rendering&nbsp;module,&nbsp;input&nbsp;the&nbsp;searched&nbsp;case&nbsp;and&nbsp;generate&nbsp;a&nbsp;"case&nbsp;list"&nbsp;file<br>
+&nbsp;<br>
+@Return&nbsp;File&nbsp;Object</tt></dd></dl>
+ <dl><dt><a name="-S_sendContent"><strong>S_sendContent</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/search/searchResult<br>
+utility:&nbsp;given&nbsp;the&nbsp;selected&nbsp;project&nbsp;number,&nbsp;using&nbsp;db_query.getDBRecordByProNum()&nbsp;and&nbsp;getTelRecordsDateByProNum()&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;getting&nbsp;the&nbsp;matched&nbsp;record&nbsp;and&nbsp;all&nbsp;the&nbsp;tel&nbsp;record&nbsp;date&nbsp;for&nbsp;selection<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"search/search_result.html"&nbsp;with&nbsp;data_list&nbsp;and&nbsp;time_list&nbsp;for&nbsp;render&nbsp;the&nbsp;case&nbsp;detail</tt></dd></dl>
+ <dl><dt><a name="-S_sendTelContent"><strong>S_sendTelContent</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/search/searchTelResult<br>
+utility:&nbsp;processing&nbsp;the&nbsp;selection&nbsp;of&nbsp;the&nbsp;tel.&nbsp;record&nbsp;date&nbsp;and&nbsp;send&nbsp;the&nbsp;tel.&nbsp;record&nbsp;date&nbsp;detail<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"search/tel_detail.html"&nbsp;with&nbsp;tel_detail&nbsp;list&nbsp;for&nbsp;render&nbsp;the&nbsp;tel.&nbsp;record&nbsp;detail</tt></dd></dl>
+ <dl><dt><a name="-S_setContent"><strong>S_setContent</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/search/select<br>
+utility:&nbsp;processing&nbsp;the&nbsp;search&nbsp;condition&nbsp;and&nbsp;get&nbsp;the&nbsp;match&nbsp;record&nbsp;using&nbsp;db_query.query_data_with_condition()<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"search/search_select.html"&nbsp;with&nbsp;data_list&nbsp;and&nbsp;record&nbsp;number&nbsp;list&nbsp;for&nbsp;select&nbsp;box&nbsp;rendering</tt></dd></dl>
+ <dl><dt><a name="-index"><strong>index</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/search<br>
+utility:&nbsp;render&nbsp;the&nbsp;search&nbsp;home&nbsp;page<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"search/home.html"</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>query_result</strong> = []<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>search_api</strong> = &lt;flask.blueprints.Blueprint object&gt;</td></tr></table>
+</body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module module.control.controller</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="module.html"><font color="#ffffff">module</font></a>.<a href="module.control.html"><font color="#ffffff">control</font></a>.controller</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cbrian_yang%5Cdesktop%5Citri_dev%5Cmodule%5Ccontrol%5Ccontroller.py">c:\users\brian_yang\desktop\itri_dev\module\control\controller.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+<a href="util.sql.db_insert.html">util.sql.db_insert</a><br>
+</td><td width="25%" valign=top><a href="util.sql.db_query.html">util.sql.db_query</a><br>
+<a href="util.sql.db_struct.html">util.sql.db_struct</a><br>
+</td><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="threading.html">threading</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+<a href="util.xls.timeConvert.html">util.xls.timeConvert</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-C_editControl"><strong>C_editControl</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/control/control_edit<br>
+utility:&nbsp;get&nbsp;the&nbsp;control&nbsp;form&nbsp;record&nbsp;from&nbsp;itri.ctbl_record&nbsp;by&nbsp;project&nbsp;number&nbsp;and&nbsp;render&nbsp;the&nbsp;edit&nbsp;form<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"control/EditForm.html",&nbsp;with&nbsp;the&nbsp;ctbl_record&nbsp;split&nbsp;to&nbsp;timeline&nbsp;and&nbsp;key_point&nbsp;list</tt></dd></dl>
+ <dl><dt><a name="-C_save2Db"><strong>C_save2Db</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/control/control_save<br>
+utility:&nbsp;save&nbsp;the&nbsp;edited&nbsp;ctbl&nbsp;record&nbsp;by&nbsp;project&nbsp;number&nbsp;using&nbsp;the&nbsp;db_insert.insert_ctblDatas()<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"edit/singEditResult.html"&nbsp;for&nbsp;result&nbsp;confirmation&nbsp;and&nbsp;hard&nbsp;refresh</tt></dd></dl>
+ <dl><dt><a name="-C_sendHome"><strong>C_sendHome</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/control<br>
+utility:&nbsp;send&nbsp;the&nbsp;default&nbsp;control&nbsp;form&nbsp;edit&nbsp;page<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"control/home.html",&nbsp;with&nbsp;the&nbsp;rec_num&nbsp;list&nbsp;for&nbsp;select&nbsp;box&nbsp;utility</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>control_api</strong> = &lt;flask.blueprints.Blueprint object&gt;<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>session</strong> = &lt;LocalProxy unbound&gt;</td></tr></table>
+</body></html>

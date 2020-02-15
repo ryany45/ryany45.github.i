@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module module.edit.controller</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="module.html"><font color="#ffffff">module</font></a>.<a href="module.edit.html"><font color="#ffffff">edit</font></a>.controller</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cbrian_yang%5Cdesktop%5Citri_dev%5Cmodule%5Cedit%5Ccontroller.py">c:\users\brian_yang\desktop\itri_dev\module\edit\controller.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+<a href="util.sql.db_insert.html">util.sql.db_insert</a><br>
+<a href="util.sql.db_misc.html">util.sql.db_misc</a><br>
+</td><td width="25%" valign=top><a href="util.sql.db_query.html">util.sql.db_query</a><br>
+<a href="util.sql.db_struct.html">util.sql.db_struct</a><br>
+<a href="util.fileparser.html">util.fileparser</a><br>
+</td><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="threading.html">threading</a><br>
+<a href="time.html">time</a><br>
+</td><td width="25%" valign=top><a href="util.xls.timeConvert.html">util.xls.timeConvert</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-F_SendFileSelect"><strong>F_SendFileSelect</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/fileEditSelect<br>
+utility:&nbsp;send&nbsp;the&nbsp;select&nbsp;box&nbsp;that&nbsp;contained&nbsp;changed&nbsp;and&nbsp;new&nbsp;record's&nbsp;project&nbsp;number&nbsp;for&nbsp;user&nbsp;to&nbsp;view<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;changed&nbsp;and&nbsp;new&nbsp;project&nbsp;number&nbsp;is&nbsp;get&nbsp;by&nbsp;db_misc.GetModifyIDBylist()<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"edit/fileSelectBox.html",&nbsp;with&nbsp;change&nbsp;and&nbsp;new&nbsp;list&nbsp;for&nbsp;project&nbsp;number</tt></dd></dl>
+ <dl><dt><a name="-F_sendFileEdit"><strong>F_sendFileEdit</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/fileEdit<br>
+utility:&nbsp;render&nbsp;default&nbsp;home&nbsp;page&nbsp;for&nbsp;file&nbsp;type&nbsp;edited&nbsp;method<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"edit/singEditResult.html",&nbsp;with&nbsp;rec_detail&nbsp;and&nbsp;tel_detail&nbsp;list&nbsp;for&nbsp;render&nbsp;existed&nbsp;data</tt></dd></dl>
+ <dl><dt><a name="-F_sendFileEditDiff"><strong>F_sendFileEditDiff</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/fileEditDiff<br>
+utility:&nbsp;given&nbsp;the&nbsp;project&nbsp;number&nbsp;selected,&nbsp;this&nbsp;module&nbsp;will&nbsp;iterate&nbsp;through&nbsp;all&nbsp;of&nbsp;the&nbsp;data&nbsp;for&nbsp;the&nbsp;selected&nbsp;record<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;find&nbsp;the&nbsp;different&nbsp;element&nbsp;for&nbsp;the&nbsp;front<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"edit/fileChangedResult.html",&nbsp;two&nbsp;list&nbsp;correspond&nbsp;to&nbsp;the&nbsp;different&nbsp;element&nbsp;list&nbsp;for&nbsp;record&nbsp;data&nbsp;and&nbsp;tel.&nbsp;record</tt></dd></dl>
+ <dl><dt><a name="-F_sendFileEditResult"><strong>F_sendFileEditResult</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/fileEditStore<br>
+utility:&nbsp;iterate&nbsp;through&nbsp;all&nbsp;of&nbsp;the&nbsp;changed&nbsp;list&nbsp;index&nbsp;and&nbsp;store&nbsp;the&nbsp;data&nbsp;into&nbsp;db&nbsp;using&nbsp;db_insert.insert_data()&nbsp;<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"edit/singEditResult.html",&nbsp;with&nbsp;confirmation&nbsp;flag&nbsp;and&nbsp;the&nbsp;hard&nbsp;refresh</tt></dd></dl>
+ <dl><dt><a name="-F_sendSingEditForm"><strong>F_sendSingEditForm</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/singCaseEdit<br>
+utility:&nbsp;send&nbsp;the&nbsp;default&nbsp;single&nbsp;case&nbsp;edit&nbsp;form&nbsp;page,&nbsp;with&nbsp;record&nbsp;data&nbsp;and&nbsp;telephone&nbsp;record&nbsp;editing&nbsp;<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"edit/singEditForm.html",&nbsp;with&nbsp;rec_detail&nbsp;and&nbsp;tel_detail&nbsp;list&nbsp;for&nbsp;render&nbsp;existed&nbsp;data</tt></dd></dl>
+ <dl><dt><a name="-F_sendSingEditSelect"><strong>F_sendSingEditSelect</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/<br>
+utility:&nbsp;send&nbsp;the&nbsp;default&nbsp;single&nbsp;case&nbsp;edit&nbsp;home&nbsp;page,&nbsp;with&nbsp;db_query.getProNum()&nbsp;to&nbsp;get&nbsp;all&nbsp;of&nbsp;the&nbsp;document&nbsp;project&nbsp;number<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"edit/singHome.html",&nbsp;with&nbsp;the&nbsp;rec_num&nbsp;list&nbsp;for&nbsp;select&nbsp;box&nbsp;utility</tt></dd></dl>
+ <dl><dt><a name="-F_storeSingData"><strong>F_storeSingData</strong></a>()</dt><dd><tt>routing&nbsp;name:&nbsp;/storeSing<br>
+utility:&nbsp;send&nbsp;edited&nbsp;single&nbsp;record&nbsp;to&nbsp;db&nbsp;with&nbsp;db_insert.insert_single_data()&nbsp;and&nbsp;db_insert.insertTelDatas()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;note&nbsp;that&nbsp;the&nbsp;tel.&nbsp;record&nbsp;storing&nbsp;is&nbsp;running&nbsp;in&nbsp;a&nbsp;child&nbsp;thread&nbsp;and&nbsp;is&nbsp;waited&nbsp;to&nbsp;be&nbsp;joined&nbsp;by&nbsp;the&nbsp;main&nbsp;thread<br>
+&nbsp;<br>
+@Return&nbsp;the&nbsp;"edit/singEditResult.html",&nbsp;with&nbsp;rec_detail&nbsp;and&nbsp;tel_detail&nbsp;list&nbsp;for&nbsp;render&nbsp;existed&nbsp;data</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>New</strong> = []<br>
+<strong>change_index</strong> = []<br>
+<strong>changed_pro_num</strong> = []<br>
+<strong>different</strong> = []<br>
+<strong>edit_api</strong> = &lt;flask.blueprints.Blueprint object&gt;<br>
+<strong>edit_list</strong> = []<br>
+<strong>file_db_record</strong> = []<br>
+<strong>file_tel_record</strong> = []<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>session</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>thread1</strong> = None</td></tr></table>
+</body></html>
